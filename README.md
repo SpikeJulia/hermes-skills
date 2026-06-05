@@ -37,14 +37,14 @@
 让 Agent 直接读 GitHub 链接自己装：
 
 ```
-帮我安装这个 skill：https://github.com/SpikeJulia/MrTang-Skills/tree/main/hermes-memory-tool
+帮我安装这个 skill：https://github.com/SpikeJulia/MrTang-Skills/tree/main/hermes-memory
 ```
 
 或者手动 clone：
 
 ```bash
 git clone https://github.com/SpikeJulia/MrTang-Skills.git
-cp -r MrTang-Skills/hermes-memory-tool ~/.hermes/skills/
+cp -r MrTang-Skills/hermes-memory ~/.hermes/skills/
 cp -r MrTang-Skills/official-source-research ~/.hermes/skills/research/
 ```
 
