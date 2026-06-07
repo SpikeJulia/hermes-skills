@@ -7,7 +7,7 @@
 #### Mr.Tang 日常在用的一些 Agent Skill，开源在这里
 
 [![License](https://img.shields.io/badge/License-MIT-10B981?style=for-the-badge)](./LICENSE)
-[![Skills](https://img.shields.io/badge/Skills-2-3B82F6?style=for-the-badge)](#-skills)
+[![Skills](https://img.shields.io/badge/Skills-3-3B82F6?style=for-the-badge)](#-skills)
 [![Hermes](https://img.shields.io/badge/Hermes-Agent_Skill-8B5CF6?style=for-the-badge)](https://github.com/SpikeJulia/hermes-config)
 
 ![Hermes Agent](https://img.shields.io/badge/Hermes_Agent-Skill-6c5ce7?style=flat-square)
@@ -27,6 +27,7 @@
 
 | 名字 | 一句话 |
 |---|---|
+| 🎯 [**hermes-butler-orchestration（管家编排手册）**](#-hermes-butler-orchestration管家编排手册) | 管家调度子代理的操作系统 — 9 角色模板 + 15+ pitfall 库 + 治理宪法 |
 | 🔍 [**official-source-research（定向调研）**](#-official-source-research定向调研) | 调研技术/产品时优先从官网/GitHub 官方仓库获取一手资料 |
 | 🧠 [**hermes-memory-tool（记忆管理）**](#-hermes-memory-tool记忆管理) | 三层记忆的合并/降级/删除，配浏览器可视化查看器 |
 
@@ -53,6 +54,41 @@ cp -r MrTang-Skills/official-source-research ~/.hermes/skills/research/
 ## ✨ Skills
 
 <table>
+<tr><td>
+
+### 🎯 hermes-butler-orchestration（管家编排手册）
+
+> *"派子代理干活不是喊一嗓子就完事——得有角色模板、有 dispatch 清单、有 pitfall 库防止踩一样的坑。"*
+
+从 Hermes 官方的 `subagent-driven-development`（v1.1.0，3 文件）**完全重写**为 v2.0.0（56 文件）。不再是"怎么用 delegate_task"的简单说明，而是 **SOUL.md 治理架构的执行手册索引层**——管家调度多个子代理的完整操作系统。
+
+**和官方版的区别**
+
+| | 官方 v1.1.0 | 这个 |
+|---|---|---|
+| 文件数 | 3 | 56 |
+| 角色模板 | 无 | 9 个（implementer/reviewer/researcher/debugger/planner/documenter/数据分析师/tester/安全审查员） |
+| Pitfall 库 | 无 | 15+（Vue 响应式、Claude Code、子代理验证、ACP provider 劫持……） |
+| 治理模型 | 无 | governance-architecture + governance-model + verification-protocol |
+| 管家专属 | 无 | butler-agent + 主人 meta 偏好 + option-framing 纪律 |
+
+**它能做什么**
+
+- 🧩 **9 个角色模板** — 派子代理时注入的角色约束，精准指派不跨领域
+- 📋 **dispatch 清单** — 派发前的检查门禁，防止拍脑袋派活
+- 🕳️ **15+ pitfall 库** — 踩过的坑文档化，下次不踩
+- 🏛️ **治理宪法** — SOUL.md（Governance）→ SKILL.md（Index）→ references/（Knowledge）→ templates/（Execution）→ scripts/（Operations）五层架构
+- 🛡️ **验证协议** — 子代理自测可以、自验收不行；凭据说事
+
+**怎么触发**
+
+Agent 启动时加载（subagent-driven-development skill），无需手动触发。
+
+**🌐 跨平台**：Hermes Agent
+
+→ [SKILL.md](./hermes-butler-orchestration/SKILL.md)
+
+</td></tr>
 <tr><td>
 
 ### 🔍 official-source-research（定向调研）
