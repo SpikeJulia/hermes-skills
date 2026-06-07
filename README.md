@@ -80,13 +80,17 @@ cp -r MrTang-Skills/official-source-research ~/.hermes/skills/research/
 - 🏛️ **五层治理宪法** — 严格遵守层次效力：`SOUL.md（宪法）→ SKILL.md（索引）→ references/（知识）→ templates/（执行）→ scripts/（操作）`。SOUL.md 冲突时最高优先，SKILL.md 含 governance_version 防静默漂移
 - 🛡️ **验证协议** — 子代理自测可以、自验收不行；凭据说事，证据不完整 = 未验证
 
+**前置依赖**
+
+本 skill 依赖 `~/.hermes/SOUL.md` 作为治理宪法。没有 SOUL.md？按 [bootstrap 指引](./hermes-butler-orchestration/references/bootstrap-soil-md.md) 3 分钟搭一个。
+
 **怎么触发**
 
 Agent 启动时作为 `hermes-butler-orchestration` skill 加载，无需手动触发。
 
 **🌐 跨平台**：Hermes Agent
 
-→ [SKILL.md](./hermes-butler-orchestration/SKILL.md)
+→ [SKILL.md](./hermes-butler-orchestration/SKILL.md) · [Bootstrap SOUL.md](./hermes-butler-orchestration/references/bootstrap-soil-md.md)
 
 </td></tr>
 <tr><td>
