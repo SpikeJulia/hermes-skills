@@ -77,12 +77,12 @@ cp -r MrTang-Skills/official-source-research ~/.hermes/skills/research/
 - 🧩 **9 个角色模板** — 派子代理时注入的角色约束，精准指派不跨领域
 - 📋 **dispatch 清单** — 派发前的检查门禁，防止拍脑袋派活
 - 🕳️ **15+ pitfall 库** — 踩过的坑文档化，下次不踩
-- 🏛️ **治理宪法** — SOUL.md（Governance）→ SKILL.md（Index）→ references/（Knowledge）→ templates/（Execution）→ scripts/（Operations）五层架构
-- 🛡️ **验证协议** — 子代理自测可以、自验收不行；凭据说事
+- 🏛️ **五层治理宪法** — 严格遵守层次效力：`SOUL.md（宪法）→ SKILL.md（索引）→ references/（知识）→ templates/（执行）→ scripts/（操作）`。SOUL.md 冲突时最高优先，SKILL.md 含 governance_version 防静默漂移
+- 🛡️ **验证协议** — 子代理自测可以、自验收不行；凭据说事，证据不完整 = 未验证
 
 **怎么触发**
 
-Agent 启动时加载（subagent-driven-development skill），无需手动触发。
+Agent 启动时作为 `hermes-butler-orchestration` skill 加载，无需手动触发。
 
 **🌐 跨平台**：Hermes Agent
 
